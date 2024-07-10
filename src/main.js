@@ -12,6 +12,8 @@ import '@ionic/vue/css/normalize.css';
 import '@ionic/vue/css/structure.css';
 import '@ionic/vue/css/typography.css';
 
+import './styles/variables.css';
+
 /* Optional CSS utils that can be commented out */
 import '@ionic/vue/css/padding.css';
 import '@ionic/vue/css/float-elements.css';
@@ -29,7 +31,6 @@ import '@ionic/vue/css/display.css';
 
 /* @import '@ionic/vue/css/palettes/dark.always.css'; */
 /* @import '@ionic/vue/css/palettes/dark.class.css'; */
-import '@ionic/vue/css/palettes/dark.system.css';
 
 /* Theme variables */
 import './theme/variables.css';

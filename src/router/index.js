@@ -1,8 +1,10 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
-import { RouteRecordRaw } from 'vue-router';
 import TabsPage from '../views/TabsPage.vue'
+import Tab1Page from '@/views/Tab1Page.vue';
+import Tab2Page from '@/views/Tab2Page.vue';
+import Tab3Page from '@/views/Tab3Page.vue';
 
-const routes: Array<RouteRecordRaw> = [
+const routes = [
   {
     path: '/',
     redirect: '/tabs/tab1'
@@ -17,17 +19,28 @@ const routes: Array<RouteRecordRaw> = [
       },
       {
         path: 'tab1',
-        component: () => import('@/views/Tab1Page.vue')
+        name: 'tab1',
+        component: Tab1Page
       },
       {
         path: 'tab2',
-        component: () => import('@/views/Tab2Page.vue')
+        name: 'tab2',
+        component: Tab2Page
       },
       {
         path: 'tab3',
-        component: () => import('@/views/Tab3Page.vue')
+        name: 'tab3',
+        component: Tab3Page
       }
     ]
+  },
+  {
+    path: '/random',
+    component: () => import('../views/RandomView.vue')
+  },
+  {
+    path: '/another-random',
+    component: () => import('../views/AnotherRandomView.vue')
   }
 ]
 
